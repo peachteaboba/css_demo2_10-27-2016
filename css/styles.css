@@ -1,0 +1,164 @@
+/* CSS DEMO 10/27/2016 */
+
+/* FAVICON ***********************************************/
+
+
+
+
+/* GOOGLE FONTS ******************************************/
+
+* {
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 3em;
+}
+
+
+
+
+
+/* TRANSITION ********************************************/
+
+.myDiv{
+  height: 80px;
+  width: 200px;
+
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 100px);
+
+  background: red;
+}
+
+.myDiv:hover{
+  cursor: pointer;
+  /*background: blue;*/
+  height: 200px;
+
+  -webkit-box-shadow: 0 10px 55px 19px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 10px 55px 19px rgba(0,0,0,0.75);
+  box-shadow: 0 10px 55px 19px rgba(0,0,0,0.75);
+
+  background: -webkit-linear-gradient(left, #4159E0, #9941E0);
+  background: -o-linear-gradient(right, #4159E0, #9941E0);
+  background: -moz-linear-gradient(right, #4159E0, #9941E0);
+  background: linear-gradient(to right, #4159E0, #9941E0);
+
+
+  -moz-transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+  -webkit-transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+  -o-transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+  transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+
+
+  animation: ani 0.5s ease-in-out 1 forwards;
+  -webkit-animation: ani 0.5s ease-in-out 1 forwards;
+  -moz-animation: ani 0.5s ease-in-out 1 forwards;
+  -o-animation: ani 0.5s ease-in-out 1 forwards;
+
+
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+
+}
+
+@keyframes ani {
+    0%{
+        width: 100px;
+        height: 100px;
+
+    }
+
+    100% {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+
+ /*-moz-transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+ -webkit-transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+ -o-transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;
+ transition: background 0.5s, height 0.5s, -moz-transform ease-in-out 0.5s;*/
+
+
+
+
+
+
+
+/* BOX SHADOW *********************************************/
+
+ /*-webkit-box-shadow: 0 10px 55px -19px rgba(0,0,0,0.25);
+ -moz-box-shadow: 0 10px 55px -19px rgba(0,0,0,0.25);
+ box-shadow: 0 10px 55px -19px rgba(0,0,0,0.25);*/
+
+
+ /* GRADIENT ****************************************************/
+
+ /*background: -webkit-linear-gradient(left, #4159E0, #9941E0);
+ background: -o-linear-gradient(right, #4159E0, #9941E0);
+ background: -moz-linear-gradient(right, #4159E0, #9941E0);
+ background: linear-gradient(to right, #4159E0, #9941E0); */
+
+
+
+
+/* ANIMATION ***********************************************/
+
+ /*animation: ani 0.5s ease-in-out 1 forwards;
+ -webkit-animation: ani 0.5s ease-in-out 1 forwards;
+ -moz-animation: ani 0.5s ease-in-out 1 forwards;
+ -o-animation: ani 0.5s ease-in-out 1 forwards;*/
+
+
+ /*@keyframes ani {
+     0%{
+         width: 20px;
+         left: calc(50% - 10px);
+     }
+     50% {
+         width: 140px;
+         left: calc(50% - 70px);
+     }
+     100% {
+         width: 20px;
+         left: calc(50% - 10px);
+         background-color: #1F2121;
+     }
+ }*/
+
+
+ /*-webkit-animation-delay: 0.25s;
+ animation-delay: 0.25s;*/
+
+
+
+
+
+
+/* RESPONSIVE ***************************************************/
+
+@media screen and (max-width:400px) {
+
+  body {
+    background-color: black;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+/*end*/
